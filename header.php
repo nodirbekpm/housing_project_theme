@@ -37,7 +37,12 @@
             <div class="header_block d-flex justify-content-between align-content-between">
                 <div class="header_logo">
                     <a href="<?php echo home_url(); ?>">
-                        <?php the_field('site_name', 'option'); ?>
+<!--                        --><?php //the_field('site_name', 'option'); ?>
+                        <?php
+                        $logo = get_field('site_logo', 'option');
+                        if( $logo ): ?>
+                            <img style="width: 30px" src="<?php echo esc_url($logo['url']); ?>" alt="logo">
+                        <?php endif; ?>
                     </a>
 
                 </div>
@@ -53,7 +58,6 @@
                 </div>
 
                 <ul class="header_menus d-flex align-content-center">
-
                     <?php
                     wp_nav_menu([
                         'theme_location' => 'header_menu',

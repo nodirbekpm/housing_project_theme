@@ -397,11 +397,11 @@ get_header();
                     <div class="documents_list swiper">
                         <div class="swiper-wrapper">
                             <?php foreach (get_field('documents_reports') as $item): ?>
-                                <div class="document_item swiper-slide"
+                                <a href="<?php if ($item['file']):?><?= $item['file']['url'] ?><?php else: ?>#<?php endif;?>" download class="document_item swiper-slide"
                                      data-title="<?= $item['title'] ?>">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/pdf_img.png" alt="PDF" class="document_icon"/>
                                     <p class="document_title"><?= $item['title'] ?></p>
-                                </div>
+                                </a>
                             <?php endforeach; ?>
                         </div>
                     </div>
@@ -412,11 +412,11 @@ get_header();
                     <div class="documents_list swiper">
                         <div class="swiper-wrapper">
                             <?php foreach (get_field('documents_reports') as $item): ?>
-                                <div class="document_item swiper-slide"
+                                <a href="" download class="document_item swiper-slide"
                                      data-title="<?= $item['title'] ?>">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/pdf_img.png" alt="PDF" class="document_icon"/>
                                     <p class="document_title"><?= $item['title'] ?></p>
-                                </div>
+                                </a>
                             <?php endforeach; ?>
                         </div>
                     </div>
@@ -427,11 +427,11 @@ get_header();
                     <div class="documents_list swiper">
                         <div class="swiper-wrapper">
                             <?php foreach (get_field('documents_reports') as $item): ?>
-                                <div class="document_item swiper-slide"
+                                <a href="" download class="document_item swiper-slide"
                                      data-title="<?= $item['title'] ?>">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/pdf_img.png" alt="PDF" class="document_icon"/>
                                     <p class="document_title"><?= $item['title'] ?></p>
-                                </div>
+                                </a>
                             <?php endforeach; ?>
                         </div>
                     </div>
@@ -442,11 +442,11 @@ get_header();
                     <div class="documents_list swiper">
                         <div class="swiper-wrapper">
                             <?php foreach (get_field('documents_reports') as $item): ?>
-                                <div class="document_item swiper-slide"
+                                <a href="" download class="document_item swiper-slide"
                                      data-title="<?= $item['title'] ?>">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/pdf_img.png" alt="PDF" class="document_icon"/>
                                     <p class="document_title"><?= $item['title'] ?></p>
-                                </div>
+                                </a>
                             <?php endforeach; ?>
                         </div>
                     </div>

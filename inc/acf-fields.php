@@ -1,10 +1,35 @@
 <?php
+
 if( function_exists('acf_add_local_field_group') ):
 
     acf_add_local_field_group(array(
         'key' => 'group_687a2898d8fca',
         'title' => 'Site Settings',
         'fields' => array(
+            array(
+                'key' => 'field_688c3fc4f83ba',
+                'label' => 'Site Logo',
+                'name' => 'site_logo',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+                'preview_size' => 'medium',
+            ),
             array(
                 'key' => 'field_687a291aba1a9',
                 'label' => 'Site Name',
@@ -42,7 +67,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 0,
                 'collapsed' => '',
-                'button_label' => 'Add Row',
+                'button_label' => 'Добавить',
                 'rows_per_page' => 20,
                 'sub_fields' => array(
                     array(
@@ -414,7 +439,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 0,
                 'collapsed' => '',
-                'button_label' => 'Add Row',
+                'button_label' => 'Добавить',
                 'rows_per_page' => 20,
                 'sub_fields' => array(
                     array(
@@ -491,7 +516,7 @@ if( function_exists('acf_add_local_field_group') ):
                         'min' => 0,
                         'max' => 0,
                         'collapsed' => '',
-                        'button_label' => 'Add Row',
+                        'button_label' => 'Добавить',
                         'rows_per_page' => 20,
                         'sub_fields' => array(
                             array(
@@ -670,7 +695,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 0,
                 'collapsed' => '',
-                'button_label' => 'Add Row',
+                'button_label' => 'Добавить',
                 'rows_per_page' => 20,
                 'sub_fields' => array(
                     array(
@@ -791,7 +816,7 @@ if( function_exists('acf_add_local_field_group') ):
                         'min' => 0,
                         'max' => 0,
                         'collapsed' => '',
-                        'button_label' => 'Add Row',
+                        'button_label' => 'Добавить',
                         'rows_per_page' => 20,
                         'sub_fields' => array(
                             array(
@@ -938,7 +963,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 0,
                 'collapsed' => '',
-                'button_label' => 'Add Row',
+                'button_label' => 'Добавить',
                 'rows_per_page' => 20,
                 'sub_fields' => array(
                     array(
@@ -1204,7 +1229,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 0,
                 'collapsed' => '',
-                'button_label' => 'Add Row',
+                'button_label' => 'Добавить',
                 'rows_per_page' => 20,
                 'sub_fields' => array(
                     array(
@@ -1360,7 +1385,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 0,
                 'collapsed' => '',
-                'button_label' => 'Add Row',
+                'button_label' => 'Добавить',
                 'rows_per_page' => 20,
                 'sub_fields' => array(
                     array(
@@ -1383,6 +1408,26 @@ if( function_exists('acf_add_local_field_group') ):
                         'new_lines' => '',
                         'parent_repeater' => 'field_6879d1932921f',
                     ),
+                    array(
+                        'key' => 'field_688c4318c4fd2',
+                        'label' => 'Файл',
+                        'name' => 'file',
+                        'type' => 'file',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'return_format' => 'array',
+                        'library' => 'all',
+                        'min_size' => '',
+                        'max_size' => '',
+                        'mime_types' => '',
+                        'parent_repeater' => 'field_6879d1932921f',
+                    ),
                 ),
             ),
             array(
@@ -1403,7 +1448,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 0,
                 'collapsed' => '',
-                'button_label' => 'Add Row',
+                'button_label' => 'Добавить',
                 'rows_per_page' => 20,
                 'sub_fields' => array(
                     array(
@@ -1426,6 +1471,26 @@ if( function_exists('acf_add_local_field_group') ):
                         'new_lines' => '',
                         'parent_repeater' => 'field_6879d1e229221',
                     ),
+                    array(
+                        'key' => 'field_688c4343c4fd3',
+                        'label' => 'Файл',
+                        'name' => 'file',
+                        'type' => 'file',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'return_format' => 'array',
+                        'library' => 'all',
+                        'min_size' => '',
+                        'max_size' => '',
+                        'mime_types' => '',
+                        'parent_repeater' => 'field_6879d1e229221',
+                    ),
                 ),
             ),
             array(
@@ -1446,7 +1511,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 0,
                 'collapsed' => '',
-                'button_label' => 'Add Row',
+                'button_label' => 'Добавить',
                 'rows_per_page' => 20,
                 'sub_fields' => array(
                     array(
@@ -1469,6 +1534,26 @@ if( function_exists('acf_add_local_field_group') ):
                         'new_lines' => '',
                         'parent_repeater' => 'field_6879d1fa29222',
                     ),
+                    array(
+                        'key' => 'field_688c434fc4fd4',
+                        'label' => 'Файл',
+                        'name' => 'file',
+                        'type' => 'file',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'return_format' => 'array',
+                        'library' => 'all',
+                        'min_size' => '',
+                        'max_size' => '',
+                        'mime_types' => '',
+                        'parent_repeater' => 'field_6879d1fa29222',
+                    ),
                 ),
             ),
             array(
@@ -1489,7 +1574,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'min' => 0,
                 'max' => 0,
                 'collapsed' => '',
-                'button_label' => 'Add Row',
+                'button_label' => 'Добавить',
                 'rows_per_page' => 20,
                 'sub_fields' => array(
                     array(
@@ -1510,6 +1595,26 @@ if( function_exists('acf_add_local_field_group') ):
                         'rows' => '',
                         'placeholder' => '',
                         'new_lines' => '',
+                        'parent_repeater' => 'field_6879d25429225',
+                    ),
+                    array(
+                        'key' => 'field_688c435dc4fd5',
+                        'label' => 'Файл',
+                        'name' => 'file',
+                        'type' => 'file',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'return_format' => 'array',
+                        'library' => 'all',
+                        'min_size' => '',
+                        'max_size' => '',
+                        'mime_types' => '',
                         'parent_repeater' => 'field_6879d25429225',
                     ),
                 ),
