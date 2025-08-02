@@ -143,6 +143,29 @@ get_header();
                     wp_reset_postdata(); ?>
 
                     <!-- Все новости -->
+                    <style>
+                        .main_news .item_btn {
+                            padding: 15px 50px;
+                            color: #000;
+                            font-size: 16px;
+                            font-weight: 400;
+                            border-radius: 5px;
+                            background: linear-gradient(90deg, #bbea90, #75ca63, #bbea90);
+                            background-size: 300% 100%;
+                            background-position: left;
+                            transition: background-position 0.6s ease;
+                            border: none;
+                            cursor: pointer;
+                            display: inline-block;
+                        }
+
+                        .main_news .item_btn:hover {
+                            background-position: right;
+                        }
+
+
+
+                    </style>
                     <div class="news_item all_news">
                         <p class="all_title">Все новости</p>
                         <div class="news_all_img">

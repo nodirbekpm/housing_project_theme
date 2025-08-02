@@ -34,15 +34,15 @@
     <!-- header -->
     <header class="header" id="header">
         <div class="container">
-            <div class="header_block d-flex justify-content-between align-content-between">
+            <div class="header_block d-flex justify-content-between align-items-center">
                 <div class="header_logo">
-                    <a href="<?php echo home_url(); ?>">
-<!--                        --><?php //the_field('site_name', 'option'); ?>
+                    <a href="<?php echo home_url(); ?>" class="d-flex align-items-center gap-3">
                         <?php
                         $logo = get_field('site_logo', 'option');
                         if( $logo ): ?>
-                            <img style="width: 30px" src="<?php echo esc_url($logo['url']); ?>" alt="logo">
+                            <img style="width: 40px" src="<?php echo esc_url($logo['url']); ?>" alt="logo">
                         <?php endif; ?>
+                        <span class="flex-wrap"><?= get_field('navbar_title', 'option') ?></span>
                     </a>
 
                 </div>
